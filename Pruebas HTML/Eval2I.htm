@@ -1,0 +1,23 @@
+<HTML>
+	<SCRIPT LANGUAGE="JavaScript">
+	
+	var a,b;
+	var discri;
+	var x1,x2;
+	a=parseFloat(prompt("Escribe el coeficiente de la x^2",""));
+	b=parseFloat(prompt("Escribe el coeficiente de la x",""));
+	discri=Math.pow(b,2);
+	if(discri<0) alert("Soluciones Imaginarias");
+	if(discri==0)
+	{
+		x1=-b/(2*a);
+		alert("Solución doble que es "+x1);
+	}
+	if(discri>0)
+	{
+		x1=(-b+Math.sqrt(discri))/(2*a);
+		x2=(-b-Math.sqrt(discri))/(2*a);
+		alert("Las soluciones son = "+x1+" y "+x2);
+	}
+	</SCRIPT>
+</HTML>

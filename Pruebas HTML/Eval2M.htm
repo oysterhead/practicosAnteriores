@@ -1,0 +1,24 @@
+<HTML>
+	<SCRIPT LANGUAGE="JavaScript">
+	do
+	{
+		var suma,prod;
+		var nro=7;
+		var salida="";
+		prod=1;
+		suma=0;
+		for (i=1;i<16;i++)
+		{
+			var multiplo7=nro*i;
+			suma=suma+multiplo7;
+			prod=prod*multiplo7;
+			salida=salida+i+"\t"+multiplo7+"\t"+suma+"\t"+prod+"\n";
+		}
+		alert("TABLA DE DATOS DEL NRO 7!!\n\nIteracion nro:\tMULTIPLO:\tSUMA:\tPRODUCTO:\n"+salida);
+		var opc1=prompt("REPETIR? (Si/No): ","");
+		var opc=opc1.charAt(0);
+	}
+	while(opc=="s"||opc=="S");
+	
+	</SCRIPT>
+</HTML>

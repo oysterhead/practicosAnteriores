@@ -1,0 +1,29 @@
+<HTML>
+	<SCRIPT LANGUAGE="JavaScript">
+	
+	do
+	{
+	var num1,num2;
+	num1=parseFloat(prompt("ESTA ES UNA MULTIPLICADORA MUY ESPECIAL.\n\nPOR FAVOR, INGRESÁ UN NRO ENTRE 0 Y 57: ",""));
+	while(num1<0||num1>57)
+	{
+		num1=parseFloat(prompt("EL NRO INGRESADO NO ES CORRECTO.\nEL NRO TIENE QUE ESTAR COMPRENDIDO ENTRE 0 Y 57.\n\n POR FAVOR, INGRESE UN NRO: ",""));
+	}
+	num2=parseFloat(prompt("AHORA INGRESA OTRO NUMERO TAMBIÉN ENTRE 0 Y 57: ",""));
+	while(num2<0||num2>57)
+	{
+		num2=parseFloat(prompt("EL SEGUNDO NRO INGRESADO NO CUMPLE CON LO PEDIDO.\nRECORDA QUE ES UN NRO ENTRE 0 Y 57: ",""));
+	}
+	
+	var multiplicacion=num1*num2;
+	alert("EL PRODUCTO ES: "+multiplicacion);
+	var opc1=prompt("DESE HACER OTRA MULTIPLICACION ESPECIAL? (S/N): ","");
+	var opc=opc1.charAt(0);
+	alert(opc);
+	}
+	while(opc=="s"||opc=="S");
+
+	alert("GRACIAS POR UTILIZAR ESTA CALCULADORA!!!!");
+
+	</SCRIPT>
+</HTML>

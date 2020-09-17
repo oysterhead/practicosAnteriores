@@ -1,0 +1,31 @@
+<HTML>
+	<SCRIPT LANGUAGE="JavaScript">
+	
+	var opc="0";
+	while (opc!=5)
+	{
+		opc=parseInt(prompt("HOLA! ESTE PROGRAMA PERMITE CALCULAR EL ÁREA DE LAS SIGUIENTES FIGURAS GEOMÉTRICAS:\n1) TRIANGULO - 2)RECTÁNGULO - 3)CIRCULO - 5)SALIR",""));
+		switch(opc)
+		{
+			case(1):
+				var base=parseFloat(prompt("POR FAVOR, INGRESAR EL VALOR DE LA BASE: ",""));
+				var altura=parseFloat(prompt("POR FAVOR, INGRESAR EL VALOR DE LA ALTURA: ",""));
+				var superficie=(base*altura)/2;
+				alert("LA SUPERFICIE DEL TRIANGULO ES: "+superficie);
+				break;
+			case(2):
+				var base=parseFloat(prompt("POR FAVOR, INGRESAR EL VALOR DE LA BASE: ",""));
+				var altura=parseFloat(prompt("POR FAVOR, INGRESAR EL VALOR DE LA ALTURA: ",""));
+				var superficie=(base*altura);
+				alert("LA SUPERFICIE DEL RECTÁNGULO ES: "+superficie);
+				break;
+			case(3):
+				var radio=parseFloat(prompt("POR FAVOR, INGRESAR EL VALOR DEL RADIO DEL CIRCULO: ",""));
+				var superficie;
+				superficie=parseFloat(Math.PI*Math.pow(radio,2));
+				alert("LA SUPERFICIE DEL CIRCULO ES: "+superficie);
+				break;
+		}	
+	}
+	</SCRIPT>
+</HTML>

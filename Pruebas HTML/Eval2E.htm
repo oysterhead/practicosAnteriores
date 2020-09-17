@@ -1,0 +1,18 @@
+<HTML>
+	<SCRIPT LANGUAGE="JavaScript">
+	
+	var num,suma,cont,prod;
+	suma=0;
+	cont=0;
+	prod=1;
+	num=parseInt(prompt("INGRESÁ UN NRO. PARA SALIR, INGRESÁ 9999: ",""));
+	while(num!=9999){
+		cont++;
+		suma=suma+num;
+		prod=prod*num;
+		num=parseFloat(prompt("Otro nro?: ",""));
+	}
+	alert("LA CANTIDAD DE NROS INGRESADOS FUE: "+cont+"\n\nLA SUMA DE LO INGRESADO: "+suma+"\n\nEL PRODUCTO TOTAL ES: "+prod);
+
+	</SCRIPT>
+</HTML>

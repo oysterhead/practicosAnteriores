@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!--Se cargan los datos principales de la cabecera de la web con el llamado al archivo "estilos.css" el cual contendrá
+	todo el manejo del formato-->
+		<meta charset="UTF-8">
+		<title>Grupo de música - Queen</title>
+		<link type="text/css" href="estilos.css" rel="stylesheet">
+		<script type="text/javascript" src="./volver.js"></script>
+	</head>
+	
+	<body>
+		<!--Aqui comenzamos a cargar el cuerpo del html. Haré distintas clases que me permitan el "manejo" de formato de los textos (también irán al
+		archivo estilos.css) pero de esta manera puedo llamarlos-->
+		<div class="titulo uno">Queen</div>
+		<br>
+		<div class="titulo dos">Banda britanica de rock formada en 1970 en Londres</div>
+		<br>
+		<img src="imagenes\Queen.jpg" alt="Foto de la banda Queen" style="width:400px" style="height:200px"> <!--la función ALT me permite que, en caso de no cargarse la imagen
+		por lo menos me trae una "descripción"-->
+		<br>
+		<div class="titulo tres">Integrantes del grupo</div>
+		<ul>
+			<li>Brian May</li>
+			<li>Freddie Mercury</li>
+			<li>John Deacon</li>
+			<li>Roger Taylor</li>
+		</ul>
+		<br>
+		<div class="titulo cuatro">Discografía</div>
+		<br>
+		<table class="infor">
+			<caption>Grandes éxitos de Queen</caption>
+			<thead>
+			<tr>
+				<th span id="cabecera">Año</th></span>
+				<th span id="cabecera">Disco</th></span>
+			</tr>
+			</thead>
+			<tbody id="cuerpotabla">
+			<tr>
+				<td>1975</td>
+				<td>A Night at the Opera</td>
+			</tr>
+			<tr>
+				<td>1986</td>
+				<td>A Kind of Magic</td>
+			</tr>
+			<tr>
+				<td>1989</td>
+				<td>The Miracle</td>
+			</tr>
+			</tbody>
+			<tfoot>
+			<tr>	
+				<td colspan="2"><span id="masvendido">"A Kind of Magic" fue el álbum más exitoso.</span></td>
+			</tr>
+			</tfoot>
+		</table>
+	<br>	
+	<div class="titulo seis">Sitio web oficial</div>
+	<a href="http://www.queenonline.com/" target="_blank" color="blue">www.queenonline.com</a>
+	<br>
+	<br>
+	<button onclick="vuelve()">Volver!</button>
+	</body>
+</html>

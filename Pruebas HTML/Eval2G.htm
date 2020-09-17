@@ -1,0 +1,32 @@
+<HTML>
+	<SCRIPT LANGUAGE="JavaScript">
+	
+	var x1=parseFloat(prompt("VAMOS A DEDICARNOS EXCLUSIVAMENTE A LA FUNCIÓN Y=sen(7x-5)\nINDICAME EL PRIMER VALOR: ",""));
+	var x2=parseFloat(prompt("VAMOS CON EL 2DO VALOR: ",""));
+	var salida="";
+	var y,paso;
+	if (x1>=x2)
+	{
+		alert("¡VERIFICA LOS VALORES INGRESADOS!");
+	}
+	else
+	{
+		paso=prompt("Escribe el incremento de x","");
+		paso=parseFloat(paso);
+	if (paso<=0)
+	{
+	alert("EL PASO DEBE SER UN NRO POSITIVO");
+	}
+	else
+	{
+	for (i=x1;i<=x2;i=i+paso)
+	{
+		y=sen(7x-5);
+		salida=salida+i+" "+y+"\n";
+	}
+	alert(salida);
+	}
+	}
+	
+	</SCRIPT>
+</HTML>

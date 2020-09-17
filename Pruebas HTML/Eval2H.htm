@@ -1,0 +1,23 @@
+<HTML>
+	<SCRIPT LANGUAGE="JavaScript">
+	
+	var cat1,cat2,hipo;
+	do	
+	{
+		cat1=parseFloat(prompt("CALCULAREMOS EL VALOR DEL CATETO DE UN TRIÁNGULO.\nPARA ELLO, TE PEDIMOS, INGRESES EL VALOR DE UN CATETO, AQUI: ",""));
+		hipo=parseFloat(prompt("AHORA EL VALOR DE LA HIPOTENUSA: ",""));
+		if(hipo>cat1)
+		{
+			cat2=Math.sqrt(Math.pow(hipo,2)-Math.pow(cat1,2));
+			alert("EL VALOR DEL OTRO CATETO ES "+cat2);
+			var opc1=prompt("DESEA REALIZAR OTRO CALCULO? (Si/No): ","");
+			var opc=opc1.charAt(0);
+		}
+		else
+		{
+			alert ("INGRESASTE UN DATO INCORRECTO, ADIOS!!!");
+		}
+	}
+	while(opc=="s"||opc=="S");	
+	</SCRIPT>
+</HTML>

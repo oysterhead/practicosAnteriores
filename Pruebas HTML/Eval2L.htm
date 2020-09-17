@@ -1,0 +1,22 @@
+<HTML>
+	<SCRIPT LANGUAGE="JavaScript">
+	
+	var a,b,c,paso,discri;
+	var x,y;
+	var salida="";
+	a=prompt("Escribe el coeficiente de la x^2","");
+	a=parseFloat(a);
+	b=prompt("Escribe el coeficiente de la x","");
+	b=parseFloat(b);
+	c=prompt("Escribe el término independiente","");
+	c=parseFloat(c);
+	paso=parseInt(prompt("INGRESE EL VALOR A ITERAR(valor de x): ",""));
+	var pasoneg=paso*-1;
+	for (i=pasoneg;i<=paso;i++)
+	{
+			y=a*Math.pow(i,2)+b*i+c;
+			salida=salida+"X = "+i+"\t\tY = "+y+"\n";
+	}
+	alert("TABLA DE VALORES PARA: Y="+a+"X^2 + "+b+"X + "+c+"\n\n\n"+salida);
+	</SCRIPT>
+</HTML>

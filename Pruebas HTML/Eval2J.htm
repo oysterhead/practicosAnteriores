@@ -1,0 +1,20 @@
+<HTML>
+	<SCRIPT LANGUAGE="JavaScript">
+	
+	var a,b,c,d,e,f,x,y;
+	var divisor;
+	alert ("¡¡BIENVENIDO AL PROGRAMA PARA RESOLVER SISTEMAS DE ECUACIONES!!\nLAS ECUACIONES SON DE TIPO:\naX+bY=C\ndX+eY=F");
+	a=parseFloat(prompt("INGRESEMOS LOS VALORES, UNO A UNO, a: ",""));
+	b=parseFloat(prompt("AHORA b: ",""));
+	c=parseFloat(prompt("LUEGO EL VALOR DE c: ",""));
+	d=parseFloat(prompt("SIGAMOS CON LOS VALORES DE LA OTRA ECUACION, PRIMERO d: ",""));
+	e=parseFloat(prompt("AHORA INTRODUCIMOS EL VALOR DE e: ",""));
+	f=parseFloat(prompt("Y POR ÚLTIMO f: ",""));
+	divisor=(a*e-b*d);
+	if (divisor==0) alert("REVISAR LOS VALORES!!!");
+	x=(c*e-b*f)/divisor
+	y=(a*f-d*c)/divisor
+	alert("LAS SOLUCIONES PARA LAS ECUACIONES:\n\t"+a+"X +"+b+"Y = "+c+"\n\t"+d+"X +"+e+"Y = "+f+"\n\n\tX = "+x+"\tY = "+y);
+	
+	</SCRIPT>
+</HTML>

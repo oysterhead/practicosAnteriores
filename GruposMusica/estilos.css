@@ -1,0 +1,66 @@
+/*Aquí la idea es tomar un formato general para el TEXTO*/
+.titulo{
+	style.fontFamily: "Verdana";
+}
+/*Luego en los distintos .uno, .dos, etc.. trato de darle formato particular para cada titulo*/
+
+.uno{
+    color: #333;
+    font-size: 20px;
+    text-align: left;
+}
+/* Aplicar la misma correccion aqui: */
+.dos{
+	color: #666;
+	font-size: 16px;
+	text-align: left;
+}
+
+.tres{
+	color: #333;
+    font-size: 20px;
+    text-align: left;
+}
+
+.cuatro{
+	color: #333;
+    font-size: 20px;
+    text-align: left;
+}
+
+.cinco{
+	color: #000;
+	font-size:14px;
+}
+
+.seis{
+	color: #333;
+    font-size: 20px;
+    text-align: left;
+}
+
+/*aquí, con .infor pretendo darle el formato a la tabla que generé.*/
+.infor{
+	border: 1px solid;
+	border-color: black;
+	padding: 10px;	
+	border-collapse: collapse;
+}
+.infor th,td{
+	border: 1px solid;
+	border-color: black;
+	padding:10px;
+}
+
+#cabecera{
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	background-color:#666;
+}
+
+#masvendido{
+	text-align: center;
+	font-size: 12px;
+	background-color:#ccc;
+}
